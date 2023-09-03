@@ -1,5 +1,5 @@
 {
-  "short_name": "Vital",
+  "short_name": "Neil",
   "name": "Starter template for Vite with React (TypeScript). Supports Tailwind with CSS-Modules. Jest and @react/testing-library configured and ready to go. Also ESLint, Prettier, Husky, Commit-lint and Atomic Design for components.",
   "icons": [
     {
