@@ -1,5 +1,6 @@
 {
   "name": "Forum",
+  "type": "module",
   "version": "1.0.0",
   "description": "Starter template for Vite with React (TypeScript). Supports Tailwind with CSS-Modules. Jest and @react/testing-library configured and ready to go. Also ESLint, Prettier, Husky, Commit-lint and Atomic Design for components.",
   "homepage": "https://github.com/jvidalv/vital#readme",
@@ -9,9 +10,7 @@
   },
   "author": "Neil Wei <kenisu222@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jvidalv/vital/issues"
-  },
+  "bugs": {},
   "keywords": [
     "react",
     "vite",
@@ -23,7 +22,6 @@
     "css-modules",
     "eslint",
     "prettier",
-    "husky",
     "commit-lint"
   ],
   "browserslist": [
@@ -39,12 +37,23 @@
     "start": "vite",
     "build": "vite build",
     "test": "jest",
-    "postinstall": "husky install"
+    "postinstall": "",
+    "knex": "knex --knexfile ./server/db/knexfile.js"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^2.2.1",
     "@heroicons/react": "2.0.13",
+    "auth0": "^3.7.0",
+    "components": "^0.1.0",
+    "express-jwt": "^8.4.1",
+    "knex": "^2.5.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "sqlite3": "^5.1.6",
+    "styled": "^1.0.0",
+    "styled-components": "^6.0.7",
+    "superagent": "^8.1.2"
   },
   "devDependencies": {
     "@commitlint/cli": "17.4.2",
