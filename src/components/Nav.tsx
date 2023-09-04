@@ -4,6 +4,9 @@ import { useAuth0 } from '@auth0/auth0-react'
 
 function Nav() {
   const { user, logout, loginWithRedirect } = useAuth0()
+  if (user) {
+    console.log(user)
+  }
 
   const handleSignOut = () => {
     logout({
